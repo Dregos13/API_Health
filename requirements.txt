@@ -1,0 +1,7 @@
+pymongo
+redis
+flask
+flask_cors
+pandas
+ipdb
+scikit-learn

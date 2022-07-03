@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  web:
+    image: "apidocker:latest"
+    build: .
+    ports:
+      - "8000:5000"
+    volumes:
+      - .:/code
+    environment:
+      FLASK_ENV: development
+  redis:
+    image: "redis:alpine"
+  mongo:
+    image: "mongo"
+    ports:
+      - "37017:27017"
